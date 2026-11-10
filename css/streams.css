@@ -1,0 +1,251 @@
+/* ===== STREAMS MANAGEMENT CSS ===== */
+
+/* Table Styling */
+#list {
+    border: 2px solid #dee2e6 !important;
+    border-collapse: collapse !important;
+    width: 100%;
+}
+
+#list th {
+    border: 1px solid #dee2e6 !important;
+    background-color: #f8f9fa;
+    font-weight: 600;
+    padding: 12px 8px;
+    text-align: left;
+}
+
+#list td {
+    border: 1px solid #dee2e6 !important;
+    padding: 10px 8px;
+    vertical-align: middle;
+}
+
+#list tr {
+    border-bottom: 1px solid #dee2e6 !important;
+}
+
+#list thead tr {
+    border-bottom: 2px solid #dee2e6 !important;
+}
+
+#list tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.05);
+    transition: background-color 0.2s;
+}
+
+/* Sortable Table Headers */
+th.sortable {
+    position: relative;
+    cursor: pointer;
+    padding-right: 20px !important;
+    user-select: none;
+}
+
+th.sortable::after {
+    content: "↕";
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #6c757d;
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+
+th.sortable:hover::after {
+    opacity: 1;
+    color: #495057;
+}
+
+th.sortable.asc::after {
+    content: "↑";
+    color: #007bff;
+    opacity: 1;
+    font-weight: bold;
+}
+
+th.sortable.desc::after {
+    content: "↓";
+    color: #007bff;
+    opacity: 1;
+    font-weight: bold;
+}
+
+/* Action Buttons */
+.btn-group .btn {
+    margin-right: 2px;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.btn-group .btn:last-child {
+    margin-right: 0;
+}
+
+.btn-group .btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.action-btn {
+    padding: 4px 8px;
+    font-size: 12px;
+    min-width: 32px;
+}
+
+/* Modal Animation */
+.modal-content {
+    transition: transform 0.3s ease;
+}
+
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+}
+
+/* Card Styling */
+.card-outline.card-primary {
+    border-top: 3px solid #007bff;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Page Header */
+.page-header {
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Responsive Table Container */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Form Styling */
+.form-group label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Button States */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+/* Utilities */
+.text-center {
+    text-align: center;
+}
+
+/* No data message */
+#list tbody tr.text-center td {
+    padding: 20px;
+    font-style: italic;
+    color: #6c757d;
+}
+
+/* Icon spacing */
+.fas, .fa {
+    margin-right: 5px;
+}
+
+.btn i {
+    margin-right: 5px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    #list th,
+    #list td {
+        padding: 8px 6px;
+        font-size: 14px;
+    }
+    
+    .action-btn {
+        padding: 3px 6px;
+        font-size: 11px;
+        min-width: 28px;
+    }
+    
+    .btn-group {
+        flex-wrap: wrap;
+    }
+    
+    .btn-group .btn {
+        margin-bottom: 3px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .btn, 
+    .modal, 
+    .dataTables_length, 
+    .dataTables_filter, 
+    .dataTables_info, 
+    .dataTables_paginate,
+    .dt-buttons {
+        display: none !important;
+    }
+    
+    #list {
+        border: 1px solid #000 !important;
+    }
+    
+    #list th,
+    #list td {
+        border: 1px solid #000 !important;
+        color: #000 !important;
+    }
+}
+.alert-container {
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            z-index: 9999;
+            max-width: 400px;
+        }
+        .alert {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            border: none;
+            border-left: 4px solid;
+        }
+        .alert-success {
+            border-left-color: #28a745;
+        }
+        .alert-danger {
+            border-left-color: #dc3545;
+        }
+        .alert-warning {
+            border-left-color: #ffc107;
+        }
+        .alert-info {
+            border-left-color: #17a2b8;
+        }

@@ -1,0 +1,452 @@
+/* CSS for layout */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #4285f4;
+    font-size: 22px;
+}
+
+p{
+    font-size: 12px;
+}
+
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    list-style: none;  
+}
+
+nav p{
+    color: #16bff3;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+.logo{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.hero-image{
+    width: 200px;
+}
+
+.home-container{
+    margin-top: 20px;
+    padding: 10px;
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container{
+    margin-top: 70px;
+    border-radius: 5px;
+    padding: 7px;
+    width: 700px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.help-container{
+    margin-top: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.help-container ul li {
+    list-style: circle;
+    padding: 10px;
+}
+
+
+.title-bar{
+    background-color: #4285f4;
+    color: #fff; 
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.title-bar h1{
+    color: #fff;
+    text-align: center;
+}
+
+.tab{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 7px;
+    margin: 10px;
+    color: grey;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.tab:hover{
+    background-color: #ccccccf8;
+    border-radius: 5px;
+    padding: 11px;
+    margin: 10px;
+}
+
+.btn-primary{
+    background-color: #4285f4;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 15px;
+}
+
+.btn-logout, .btn-cancel{
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 15px;
+}
+
+
+
+.btn-primary:hover{
+    background-color: #357ae8;
+}
+
+.btn-logout:hover{
+    background-color: lightcoral;
+}
+
+.avatar{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.icon{
+    width: 20px;
+    margin: 0;
+}
+
+form input, select{
+    width: 200px;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    border: #357ae8 solid 2px;
+}   
+
+
+select{
+    width: 200px;
+}
+
+label{
+    font-size: 12px;
+    color: grey;
+    font-weight: bold;
+}
+
+.left-section {
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    height: 70vh;
+  
+    
+}
+
+.right-section {
+    width: 65%;
+    padding: 20px;
+    /* border: 1px solid hsl(0, 0%, 80%); */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+textarea{
+    width: 300px;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #357ae8;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+.profile-section h2{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+.user-info{
+    text-align: center;
+    height: 150px;    
+    color: grey;
+
+}
+
+.details{
+    text-align: center;
+    color: grey;
+    font-size: 18px;
+}
+
+.profile-options{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto 70px;
+}
+
+.profile{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.profile-section{
+    text-align: center;
+    font-family: arial;
+   
+}
+
+
+.dp{
+    border-radius:50%;
+}
+
+.info-section{
+    color: grey;
+}
+.transaction-section{
+    margin-top: 15px;
+    text-align: center;
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.transaction-section a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #353333;
+    padding: 7px;
+    
+}
+
+.transaction-section a:hover{
+    background-color: #a0bbe7;
+    color: #fff;
+}
+
+span{
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+}
+
+   /* CSS for the popup container */
+.popup-container {
+    display: none;
+    position: fixed;
+    width: 60%;
+    height: 40%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0%;
+    margin-left: 20%;
+    
+}
+
+/* CSS for the popup content */
+.popup-content {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* CSS for the close button */
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.search-tab{
+    float: right;
+    padding: 6px;
+    border: 2px solid #357ae8;
+    border-radius: 30px;
+    margin-right: 16px;
+    font-size: 17px;
+    width: 300px;
+    margin-left: 60%;
+}
+
+
+.popup-container textarea {
+    width: 70%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #357ae8;
+    border-radius: 15px;
+    font-size: 16px;
+    resize: none;
+  }
+
+
+
+.success-notice{
+    background-color: lightgreen;
+    padding: 0.5em;
+    width: 40%;
+    text-align: center;
+    color: darkgreen;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 20px auto;
+}
+
+.success-notice a{
+    color: darkgreen;
+}
+
+.success-notice a:hover{
+    color: #fff;
+}
+
+
+.unsuccess-notice{
+    background-color: red;
+    padding: 0.5em;
+    width: 40%;
+    text-align: center;
+    color: darkred;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 20px auto;
+}
+
+.unsuccess-notice a{
+    color: darkred;
+}
+
+.unsuccess-notice a:hover{
+    color: #ff6347;
+}
+
+.login-background{
+		
+    background-color: black;
+		background-size: cover;
+		width: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+
+
+  
+	.overlay{
+		background-color: #000000ab;
+		width: 100%;
+		background-attachment: fixed;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+
+	.login-div{
+		background: white ;
+		width: 400px;
+		margin: 0 auto;
+		margin-top: 25px !important;
+		border-radius: 100px 5px !important;
+		padding-bottom: 10px;
+		align-content: center;
+        opacity: 0.9;
+	}
+	
+	
+	.login-padding{
+		padding-top: 10px;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-bottom: 20px;
+	}
+	
+	.logo-div{
+		padding-top: 15px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid rgba(182, 178, 178, 0.363);
+	}
+	.login-padding h2{
+		margin-top: 5px;
+		margin-bottom: 30px;
+	}
+	.login-padding label{
+		color: white;
+	}
+	.button{ 
+		margin-top: 5px;
+		border: 1px solid black;
+ 
+    background: green;
+	}
+	.button:hover{
+		background: green;
+		color: white;
+	}
+
+.button{
+  background:  green;
+  color: white;
+  width: 300px;
+  height: 40px;
+}
+.li.a{
+    color: white;
+
+}
+.avatar{
+    height: 50px;
+    width: 50px;
+    display: block;
+            margin: 0 auto;
+            width: 150px; /* Set the width and height to create a circular frame */
+            height: 150px;
+            border-radius: 50%; /* Create a circular shape */
+            object-fit: cover; /* Maintain aspect ratio */
+}
+h2 {
+    text-align: center; 
+    padding-top: 20px; 
+}
+p{
+    text-align: center; 
+    color: black; 
+}
